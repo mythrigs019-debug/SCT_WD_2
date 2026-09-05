@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoTrack - Stopwatch</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="stopwatch-container">
+
+        <h1>CHRONOTRACK</h1>
+        <p class="subtitle">Precision Stopwatch</p>
+
+        <div class="timer" id="display">
+            00:00:00.00
+        </div>
+
+        <div class="buttons">
+            <button id="startBtn">▶ Start</button>
+            <button id="pauseBtn">⏸ Pause</button>
+            <button id="resetBtn">↻ Reset</button>
+            <button id="lapBtn">🏁 Lap</button>
+        </div>
+
+        <div class="laps-section">
+            <h2>Lap Times</h2>
+
+            <div id="lapList" class="lap-list">
+                <p class="empty-message">No laps recorded yet</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

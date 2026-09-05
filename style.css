@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e1b4b, #312e81);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.stopwatch-container {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    padding: 45px 35px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(15px);
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #c4b5fd;
+    font-size: 1rem;
+    margin-bottom: 35px;
+}
+
+.timer {
+    font-size: 4.5rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin: 20px 0 35px;
+    font-variant-numeric: tabular-nums;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+button {
+    border: none;
+    padding: 13px 22px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.22);
+}
+
+#startBtn {
+    background: #22c55e;
+}
+
+#pauseBtn {
+    background: #f59e0b;
+}
+
+#resetBtn {
+    background: #ef4444;
+}
+
+#lapBtn {
+    background: #6366f1;
+}
+
+.laps-section {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.laps-section h2 {
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 1.3rem;
+}
+
+.lap-list {
+    max-height: 220px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.lap-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.lap-number {
+    font-weight: bold;
+    color: #c4b5fd;
+}
+
+.lap-time {
+    font-variant-numeric: tabular-nums;
+}
+
+.empty-message {
+    text-align: center;
+    color: #a5b4fc;
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+    .stopwatch-container {
+        padding: 35px 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        letter-spacing: 3px;
+    }
+
+    .timer {
+        font-size: 2.7rem;
+        letter-spacing: 2px;
+    }
+
+    button {
+        width: 45%;
+        padding: 12px 10px;
+    }
+}
