@@ -58,6 +58,3 @@ Create an interactive and user-friendly stopwatch web application with functions
 ## 🏢 Internship
 
 **SkillCraft Technology — Web Development Internship**
-
-**Task:** Task 02 — Stopwatch Web Application# SCT_WD_2
-Interactive and responsive stopwatch web application with start, pause, reset, and lap time tracking.
